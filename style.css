@@ -25,7 +25,7 @@
   --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-- {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -77,19 +77,8 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-}
-
-.menu-text::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 12px;
-  background-color: var(--color-border);
-  margin-left: 0.75rem;
-  margin-right: 0.25rem;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  vertical-align: middle;
+  padding-right: 0.75rem;
+  border-right: 1px solid var(--color-border);
 }
 
 .menu-link img {
@@ -177,4 +166,190 @@ td.action-cell {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: 0.75rem;
-  text-align
+  text-align: center;
+  vertical-align: middle;
+}
+
+td.action-cell img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--radius-sm);
+}
+
+.info-block {
+  background-color: var(--color-cell-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  color: var(--color-text-main);
+  margin-bottom: 0.75rem;
+}
+
+.info-block p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   4. Universal Button Link Protection
+   ========================================================================== */
+td a.table-btn,
+td a.table-btn:link,
+td a.table-btn:visited {
+  display: inline-block;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-main) !important;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+td a.table-btn-slate,
+td a.table-btn-slate:link,
+td a.table-btn-slate:visited {
+  background-color: var(--color-btn-blue-bg) !important;
+  border: 1px solid var(--color-btn-blue-border) !important;
+}
+
+td a.table-btn-slate:hover {
+  background-color: var(--color-btn-blue-hover) !important;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+  transform: translateY(-1px);
+}
+
+td a.table-btn-navy,
+td a.table-btn-navy:link,
+td a.table-btn-navy:visited {
+  background-color: var(--color-btn-navy-bg) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+td a.table-btn-navy:hover {
+  background-color: var(--color-btn-navy-hover) !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transform: translateY(-1px);
+}
+
+td a.table-btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Subheader Component (Layered)
+   ========================================================================== */
+.subheader-wrapper {
+  background-color: var(--color-table-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.subheader-inner {
+  background-color: var(--color-cell-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+}
+
+h2.subheader-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Extra Image Code
+   ========================================================================== */
+.image-cell-flush {
+  background-color: var(--color-cell-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-cell-flush img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+/* ==========================================================================
+   Standalone Button Styles
+   ========================================================================== */
+a.table-btn,
+a.table-btn:link,
+a.table-btn:visited {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 0.75rem auto;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-main) !important;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a.table-btn-slate,
+a.table-btn-slate:link,
+a.table-btn-slate:visited {
+  background-color: var(--color-btn-blue-bg) !important;
+  border: 1px solid var(--color-btn-blue-border) !important;
+}
+
+a.table-btn-slate:hover {
+  background-color: var(--color-btn-blue-hover) !important;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+  transform: translateY(-1px);
+}
+
+a.table-btn-navy,
+a.table-btn-navy:link,
+a.table-btn-navy:visited {
+  background-color: var(--color-btn-navy-bg) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+a.table-btn-navy:hover {
+  background-color: var(--color-btn-navy-hover) !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transform: translateY(-1px);
+}
+
+a.table-btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Responsive Sizing for Landscape / Desktop Screens
+   ========================================================================== */
+@media (orientation: landscape) {
+  .table-wrapper:has(.image-cell-flush),
+  .subheader-wrapper,
+  .info-block {
+    width: 100%;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
