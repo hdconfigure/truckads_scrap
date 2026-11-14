@@ -44,7 +44,7 @@ import { pathToFileURL } from 'url';
 
 
 
-	hdui.text("test5") +
+	hdui.text("test0") +
 	    hdui.image("/assets/truckday.png") +
 	    hdui.text(
 		"Put your ad on a moving truck across america, or register your truck for adspace and get paid. Why would you pay for an ad in just one place that doesnt move? Why would you drive truck and waste extra money you could be making?"
