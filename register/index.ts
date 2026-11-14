@@ -17,7 +17,7 @@ import { pathToFileURL } from 'url';
     'tools',
     'git',
     'hdconfigure',
-    'hdconfigure_dynamic_webapps',
+    'hdconfigure__webapps',
     'hdconfigure_dynamic_webapps_build_page.ts'
   );
   const configUrl = pathToFileURL(configPath).href;
