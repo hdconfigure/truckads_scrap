@@ -41,7 +41,7 @@ import { pathToFileURL } from 'url';
 
 	"/style.css",
 	"TruckAds",
-	"./menu/",
+	"../",
 	"Truck Ads Menu",
 	"by HD Configure",
 
