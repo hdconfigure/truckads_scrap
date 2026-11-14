@@ -41,32 +41,33 @@ import { pathToFileURL } from 'url';
 
 
 
-	
 	"/style.css",
 	"TruckAds",
-	"../",
-	"/assets/menu.png",
-	"by HD Configure",
+	"./menu/",
+
+
+
+	
 	hdui.subheader("Menu") +
     	    hdui.button("/home/", "home") +
 	hdui.button("/register/", "Place Ad") +
 	    hdui.button("/register/", "Register Truck")
 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
     );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- console.log(result);
+console.log(result);
 })().catch(console.error);
 

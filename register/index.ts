@@ -33,15 +33,14 @@ import { pathToFileURL } from 'url';
 
 
 
+	"/style.css",
+	"TruckAds",
+	"./menu/",
 
 
 
 
-    "/style.css",
-      "TruckAds",
-    "./menu/",
-    "/assets/menu.png",
-    "by HD Configure",
+
     hdui.subheader("YOU CAN GET ADS ON TRUCKS?") +
     hdui.image("/assets/trucknight.png") +
     hdui.subheader("Email: hd.configure.direct@gmail.com") +
