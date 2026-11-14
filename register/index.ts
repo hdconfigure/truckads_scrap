@@ -17,8 +17,8 @@ import { pathToFileURL } from 'url';
     'tools',
     'git',
     'hdconfigure',
-    'hdconfigure_static_apps',
-    'hdconfigure_static_apps.ts'
+    'hdconfigure_dynamic_webapps',
+    'hdconfigure_dynamic_webapps_build_page.ts'
   );
   const configUrl = pathToFileURL(configPath).href;
   const hdui = await import(configUrl);
@@ -47,21 +47,18 @@ import { pathToFileURL } from 'url';
     hdui.button("mailto:hdconfigure.direct+flightdeck_booking@gmail.com","Open Email App") +
    hdui.text(
         "To register with us send us your name, the company you work with, and whether you are a truck for rent or if you want your ad on a billboard.If you are an advertiser let us know: how long do you want the ads for, how many trucks are you looking to put ads on, do you have pictures of what kind of ad you want, etcetera etcetera. If you are a driver, let us know the type of truck you have, how often you drive, and what states you most frequently drive in.")
+
+
+
+
+
+
+
+
+
+
       );
-
-
-
-
-
-
-
-
-
-
-
-
-
-  console.log(result);
+console.log(result);
 })().catch(console.error);
 
 
