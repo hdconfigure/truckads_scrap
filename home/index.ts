@@ -38,13 +38,15 @@ import { pathToFileURL } from 'url';
 	"/style.css",
 	"TruckAds",
 	"./menu/",
+	"Truck Ads",
+	"by HD Configure",
 
 
 
 
 
 
-	hdui.text("test0") +
+	hdui.text("test1") +
 	    hdui.image("/assets/truckday.png") +
 	    hdui.text(
 		"Put your ad on a moving truck across america, or register your truck for adspace and get paid. Why would you pay for an ad in just one place that doesnt move? Why would you drive truck and waste extra money you could be making?"
