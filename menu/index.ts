@@ -39,15 +39,19 @@ import { pathToFileURL } from 'url';
 	
 
 
-
 	"/style.css",
 	"TruckAds",
-	"../",
+	"./menu/",
+	"Truck Ads Menu",
+	"by HD Configure",
+
+
+
 
 
 
 	
-	hdui.subheader("Menu") +
+
     	    hdui.button("/home/", "home") +
 	    hdui.button("/register/", "Place Ad") +
 	    hdui.button("/register/", "Register Truck")
