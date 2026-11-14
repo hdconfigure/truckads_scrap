@@ -42,15 +42,15 @@ import { pathToFileURL } from 'url';
 
 
 	
-	"../style.css",
+	"/style.css",
 	"TruckAds",
-	"../home/",
-	"../assets/menu.png",
+	"../",
+	"/assets/menu.png",
 	"by HD Configure",
 	hdui.subheader("Menu") +
-    	    hdui.button("../home/", "home") +
-	hdui.button("../register/", "Place Ad") +
-	    hdui.button("../register/", "Register Truck")
+    	    hdui.button("/home/", "home") +
+	hdui.button("/register/", "Place Ad") +
+	    hdui.button("/register/", "Register Truck")
 
     );
 

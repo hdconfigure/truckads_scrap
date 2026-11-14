@@ -9,7 +9,6 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 import path from 'path';
 import os from 'os';
 import { pathToFileURL } from 'url';
-
 (async () => {
   const configPath = path.join(
     os.homedir(),
@@ -20,30 +19,31 @@ import { pathToFileURL } from 'url';
     'hdconfigure',
     'hdconfigure_static_apps',
     'hdconfigure_static_apps.ts'
-
   );
-
   const configUrl = pathToFileURL(configPath).href;
   const hdui = await import(configUrl);
-
-
-
-
-
-
-
-
-
-
-
   const result = hdui.generate_html_page(
-    "../style.css",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "/style.css",
       "TruckAds",
-    "../menu/",
-    "../assets/menu.png",
+    "./menu/",
+    "/assets/menu.png",
     "by HD Configure",
     hdui.subheader("YOU CAN GET ADS ON TRUCKS?") +
-    hdui.image("../assets/trucknight.png") +
+    hdui.image("/assets/trucknight.png") +
     hdui.subheader("Email: hd.configure.direct@gmail.com") +
     hdui.button("mailto:hdconfigure.direct+flightdeck_booking@gmail.com","Open Email App") +
    hdui.text(
