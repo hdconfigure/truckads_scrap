@@ -76,7 +76,7 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-  padding-right: 0.375rem;
+  padding-right: 0.25rem; /* Tightened so no double margin before the bar */
   border-right: 1px solid var(--color-border);
 }
 
@@ -85,7 +85,7 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-  margin-left: 0.375rem;
+  margin-left: 0.75rem; /* Clean single margin after the vertical bar */
   display: inline-flex;
   align-items: baseline;
 }
@@ -349,4 +349,24 @@ a.table-btn-navy:visited {
 
 a.table-btn-navy:hover {
   background-color: var(--color-btn-navy-hover) !important;
-  box-shadow: 0 4px 12px rgba(37, 99,
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transform: translateY(-1px);
+}
+
+a.table-btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Responsive Sizing for Landscape / Desktop Screens
+   ========================================================================== */
+@media (orientation: landscape) {
+  .table-wrapper:has(.image-cell-flush),
+  .subheader-wrapper,
+  .info-block {
+    width: 100%;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
