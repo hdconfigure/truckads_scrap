@@ -17,8 +17,8 @@ import { pathToFileURL } from 'url';
     'tools',
     'git',
     'hdconfigure',
-    'hdconfigure__webapps',
-    'hdconfigure_dynamic_webapps_build_page.ts'
+    'hdconfigure_webapps',
+    'hdconfigure_webapps_build_page.ts'
   );
   const configUrl = pathToFileURL(configPath).href;
   const hdui = await import(configUrl);

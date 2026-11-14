@@ -17,9 +17,8 @@ import { pathToFileURL } from 'url';
 	'tools',
 	'git',
 	'hdconfigure',
-	'hdconfigure_static_apps',
-	'hdconfigure_static_apps.ts'
-
+	'hdconfigure_webapps',
+	'hdconfigure_webapps_build_page.ts'
     );
     const configUrl = pathToFileURL(configPath).href;
     const hdui = await import(configUrl);
@@ -50,7 +49,7 @@ import { pathToFileURL } from 'url';
 	
 	hdui.subheader("Menu") +
     	    hdui.button("/home/", "home") +
-	hdui.button("/register/", "Place Ad") +
+	    hdui.button("/register/", "Place Ad") +
 	    hdui.button("/register/", "Register Truck")
 
 
@@ -68,6 +67,6 @@ import { pathToFileURL } from 'url';
 	
 
     );
-console.log(result);
+    console.log(result);
 })().catch(console.error);
 
