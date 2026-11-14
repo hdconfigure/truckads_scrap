@@ -37,7 +37,7 @@ import { pathToFileURL } from 'url';
 
 	"/style.css",
 	"TruckAds",
-	"./menu/"
+	"./menu/",
 
 
 
